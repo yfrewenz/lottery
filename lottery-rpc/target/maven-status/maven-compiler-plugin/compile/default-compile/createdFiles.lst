@@ -1,0 +1,4 @@
+cn\itedus\lottery\IActivityBooth.class
+cn\itedus\lottery\res\ActivityRes.class
+cn\itedus\lottery\dto\ActivityDto.class
+cn\itedus\lottery\req\ActivityReq.class

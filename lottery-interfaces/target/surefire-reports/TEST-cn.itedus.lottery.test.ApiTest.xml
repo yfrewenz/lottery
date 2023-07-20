@@ -1,0 +1,586 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="cn.itedus.lottery.test.ApiTest" time="2.526" tests="2" errors="2" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="18"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="GBK"/>
+    <property name="java.class.path" value="E:\self_update\2_projects\self01\lottery-interfaces\target\test-classes;E:\self_update\2_projects\self01\lottery-interfaces\target\classes;E:\programing\softwares\maven-3.6.3\maven_repository\org\springframework\boot\spring-boot-starter-web\2.3.5.RELEASE\spring-boot-starter-web-2.3.5.RELEASE.jar;E:\programing\softwares\maven-3.6.3\maven_repository\org\springframework\boot\spring-boot-starter\2.3.5.RELEASE\spring-boot-starter-2.3.5.RELEASE.jar;E:\programing\softwares\maven-3.6.3\maven_repository\org\springframework\boot\spring-boot\2.3.5.RELEASE\spring-boot-2.3.5.RELEASE.jar;E:\programing\softwares\maven-3.6.3\maven_repository\org\springframework\boot\spring-boot-autoconfigure\2.3.5.RELEASE\spring-boot-autoconfigure-2.3.5.RELEASE.jar;E:\programing\softwares\maven-3.6.3\maven_repository\org\springframework\boot\spring-boot-starter-logging\2.3.5.RELEASE\spring-boot-starter-logging-2.3.5.RELEASE.jar;E:\programing\softwares\maven-3.6.3\maven_repository\ch\qos\logback\logback-classic\1.2.3\logback-classic-1.2.3.jar;E:\programing\softwares\maven-3.6.3\maven_repository\ch\qos\logback\logback-core\1.2.3\logback-core-1.2.3.jar;E:\programing\softwares\maven-3.6.3\maven_repository\org\apache\logging\log4j\log4j-to-slf4j\2.13.3\log4j-to-slf4j-2.13.3.jar;E:\programing\softwares\maven-3.6.3\maven_repository\org\apache\logging\log4j\log4j-api\2.13.3\log4j-api-2.13.3.jar;E:\programing\softwares\maven-3.6.3\maven_repository\org\slf4j\jul-to-slf4j\1.7.30\jul-to-slf4j-1.7.30.jar;E:\programing\softwares\maven-3.6.3\maven_repository\jakarta\annotation\jakarta.annotation-api\1.3.5\jakarta.annotation-api-1.3.5.jar;E:\programing\softwares\maven-3.6.3\maven_repository\org\springframework\boot\spring-boot-starter-json\2.3.5.RELEASE\spring-boot-starter-json-2.3.5.RELEASE.jar;E:\programing\softwares\maven-3.6.3\maven_repository\com\fasterxml\jackson\core\jackson-databind\2.11.3\jackson-databind-2.11.3.jar;E:\programing\softwares\maven-3.6.3\maven_repository\com\fasterxml\jackson\core\jackson-annotations\2.11.3\jackson-annotations-2.11.3.jar;E:\programing\softwares\maven-3.6.3\maven_repository\com\fasterxml\jackson\core\jackson-core\2.11.3\jackson-core-2.11.3.jar;E:\programing\softwares\maven-3.6.3\maven_repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.11.3\jackson-datatype-jdk8-2.11.3.jar;E:\programing\softwares\maven-3.6.3\maven_repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.11.3\jackson-datatype-jsr310-2.11.3.jar;E:\programing\softwares\maven-3.6.3\maven_repository\com\fasterxml\jackson\module\jackson-module-parameter-names\2.11.3\jackson-module-parameter-names-2.11.3.jar;E:\programing\softwares\maven-3.6.3\maven_repository\org\springframework\boot\spring-boot-starter-tomcat\2.3.5.RELEASE\spring-boot-starter-tomcat-2.3.5.RELEASE.jar;E:\programing\softwares\maven-3.6.3\maven_repository\org\apache\tomcat\embed\tomcat-embed-core\9.0.39\tomcat-embed-core-9.0.39.jar;E:\programing\softwares\maven-3.6.3\maven_repository\org\glassfish\jakarta.el\3.0.3\jakarta.el-3.0.3.jar;E:\programing\softwares\maven-3.6.3\maven_repository\org\apache\tomcat\embed\tomcat-embed-websocket\9.0.39\tomcat-embed-websocket-9.0.39.jar;E:\programing\softwares\maven-3.6.3\maven_repository\org\springframework\spring-web\5.2.10.RELEASE\spring-web-5.2.10.RELEASE.jar;E:\programing\softwares\maven-3.6.3\maven_repository\org\springframework\spring-beans\5.2.10.RELEASE\spring-beans-5.2.10.RELEASE.jar;E:\programing\softwares\maven-3.6.3\maven_repository\org\springframework\spring-webmvc\5.2.10.RELEASE\spring-webmvc-5.2.10.RELEASE.jar;E:\programing\softwares\maven-3.6.3\maven_repository\org\springframework\spring-aop\5.2.10.RELEASE\spring-aop-5.2.10.RELEASE.jar;E:\programing\softwares\maven-3.6.3\maven_repository\org\springframework\spring-expression\5.2.10.RELEASE\spring-expression-5.2.10.RELEASE.jar;E:\programing\softwares\maven-3.6.3\maven_repository\org\springframework\boot\spring-boot-starter-test\2.3.5.RELEASE\spring-boot-starter-test-2.3.5.RELEASE.jar;E:\programing\softwares\maven-3.6.3\maven_repository\org\springframework\boot\spring-boot-test\2.3.5.RELEASE\spring-boot-test-2.3.5.RELEASE.jar;E:\programing\softwares\maven-3.6.3\maven_repository\org\springframework\boot\spring-boot-test-autoconfigure\2.3.5.RELEASE\spring-boot-test-autoconfigure-2.3.5.RELEASE.jar;E:\programing\softwares\maven-3.6.3\maven_repository\com\jayway\jsonpath\json-path\2.4.0\json-path-2.4.0.jar;E:\programing\softwares\maven-3.6.3\maven_repository\net\minidev\json-smart\2.3\json-smart-2.3.jar;E:\programing\softwares\maven-3.6.3\maven_repository\net\minidev\accessors-smart\1.2\accessors-smart-1.2.jar;E:\programing\softwares\maven-3.6.3\maven_repository\org\ow2\asm\asm\5.0.4\asm-5.0.4.jar;E:\programing\softwares\maven-3.6.3\maven_repository\org\slf4j\slf4j-api\1.7.30\slf4j-api-1.7.30.jar;E:\programing\softwares\maven-3.6.3\maven_repository\jakarta\xml\bind\jakarta.xml.bind-api\2.3.3\jakarta.xml.bind-api-2.3.3.jar;E:\programing\softwares\maven-3.6.3\maven_repository\jakarta\activation\jakarta.activation-api\1.2.2\jakarta.activation-api-1.2.2.jar;E:\programing\softwares\maven-3.6.3\maven_repository\org\assertj\assertj-core\3.16.1\assertj-core-3.16.1.jar;E:\programing\softwares\maven-3.6.3\maven_repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;E:\programing\softwares\maven-3.6.3\maven_repository\org\junit\jupiter\junit-jupiter\5.6.3\junit-jupiter-5.6.3.jar;E:\programing\softwares\maven-3.6.3\maven_repository\org\junit\jupiter\junit-jupiter-api\5.6.3\junit-jupiter-api-5.6.3.jar;E:\programing\softwares\maven-3.6.3\maven_repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;E:\programing\softwares\maven-3.6.3\maven_repository\org\junit\platform\junit-platform-commons\1.6.3\junit-platform-commons-1.6.3.jar;E:\programing\softwares\maven-3.6.3\maven_repository\org\junit\jupiter\junit-jupiter-params\5.6.3\junit-jupiter-params-5.6.3.jar;E:\programing\softwares\maven-3.6.3\maven_repository\org\junit\jupiter\junit-jupiter-engine\5.6.3\junit-jupiter-engine-5.6.3.jar;E:\programing\softwares\maven-3.6.3\maven_repository\org\junit\vintage\junit-vintage-engine\5.6.3\junit-vintage-engine-5.6.3.jar;E:\programing\softwares\maven-3.6.3\maven_repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;E:\programing\softwares\maven-3.6.3\maven_repository\org\junit\platform\junit-platform-engine\1.6.3\junit-platform-engine-1.6.3.jar;E:\programing\softwares\maven-3.6.3\maven_repository\org\mockito\mockito-core\3.3.3\mockito-core-3.3.3.jar;E:\programing\softwares\maven-3.6.3\maven_repository\net\bytebuddy\byte-buddy\1.10.17\byte-buddy-1.10.17.jar;E:\programing\softwares\maven-3.6.3\maven_repository\net\bytebuddy\byte-buddy-agent\1.10.17\byte-buddy-agent-1.10.17.jar;E:\programing\softwares\maven-3.6.3\maven_repository\org\objenesis\objenesis\2.6\objenesis-2.6.jar;E:\programing\softwares\maven-3.6.3\maven_repository\org\mockito\mockito-junit-jupiter\3.3.3\mockito-junit-jupiter-3.3.3.jar;E:\programing\softwares\maven-3.6.3\maven_repository\org\skyscreamer\jsonassert\1.5.0\jsonassert-1.5.0.jar;E:\programing\softwares\maven-3.6.3\maven_repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;E:\programing\softwares\maven-3.6.3\maven_repository\org\springframework\spring-core\5.2.10.RELEASE\spring-core-5.2.10.RELEASE.jar;E:\programing\softwares\maven-3.6.3\maven_repository\org\springframework\spring-jcl\5.2.10.RELEASE\spring-jcl-5.2.10.RELEASE.jar;E:\programing\softwares\maven-3.6.3\maven_repository\org\springframework\spring-test\5.2.10.RELEASE\spring-test-5.2.10.RELEASE.jar;E:\programing\softwares\maven-3.6.3\maven_repository\org\xmlunit\xmlunit-core\2.7.0\xmlunit-core-2.7.0.jar;E:\programing\softwares\maven-3.6.3\maven_repository\org\mybatis\spring\boot\mybatis-spring-boot-starter\2.1.4\mybatis-spring-boot-starter-2.1.4.jar;E:\programing\softwares\maven-3.6.3\maven_repository\org\springframework\boot\spring-boot-starter-jdbc\2.3.5.RELEASE\spring-boot-starter-jdbc-2.3.5.RELEASE.jar;E:\programing\softwares\maven-3.6.3\maven_repository\com\zaxxer\HikariCP\3.4.5\HikariCP-3.4.5.jar;E:\programing\softwares\maven-3.6.3\maven_repository\org\springframework\spring-jdbc\5.2.10.RELEASE\spring-jdbc-5.2.10.RELEASE.jar;E:\programing\softwares\maven-3.6.3\maven_repository\org\springframework\spring-tx\5.2.10.RELEASE\spring-tx-5.2.10.RELEASE.jar;E:\programing\softwares\maven-3.6.3\maven_repository\org\mybatis\spring\boot\mybatis-spring-boot-autoconfigure\2.1.4\mybatis-spring-boot-autoconfigure-2.1.4.jar;E:\programing\softwares\maven-3.6.3\maven_repository\org\mybatis\mybatis\3.5.6\mybatis-3.5.6.jar;E:\programing\softwares\maven-3.6.3\maven_repository\org\mybatis\mybatis-spring\2.0.6\mybatis-spring-2.0.6.jar;E:\programing\softwares\maven-3.6.3\maven_repository\mysql\mysql-connector-java\8.0.26\mysql-connector-java-8.0.26.jar;E:\programing\softwares\maven-3.6.3\maven_repository\com\alibaba\fastjson\1.2.58\fastjson-1.2.58.jar;E:\programing\softwares\maven-3.6.3\maven_repository\org\apache\commons\commons-lang3\3.8\commons-lang3-3.8.jar;E:\programing\softwares\maven-3.6.3\maven_repository\junit\junit\4.12\junit-4.12.jar;E:\programing\softwares\maven-3.6.3\maven_repository\org\hamcrest\hamcrest-core\2.2\hamcrest-core-2.2.jar;E:\programing\softwares\maven-3.6.3\maven_repository\org\apache\dubbo\dubbo\2.7.1\dubbo-2.7.1.jar;E:\programing\softwares\maven-3.6.3\maven_repository\org\springframework\spring-context\5.2.10.RELEASE\spring-context-5.2.10.RELEASE.jar;E:\programing\softwares\maven-3.6.3\maven_repository\org\javassist\javassist\3.20.0-GA\javassist-3.20.0-GA.jar;E:\programing\softwares\maven-3.6.3\maven_repository\io\netty\netty-all\4.1.53.Final\netty-all-4.1.53.Final.jar;E:\programing\softwares\maven-3.6.3\maven_repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar;E:\programing\softwares\maven-3.6.3\maven_repository\org\yaml\snakeyaml\1.26\snakeyaml-1.26.jar;E:\programing\softwares\maven-3.6.3\maven_repository\org\apache\dubbo\dubbo-spring-boot-starter\2.7.1\dubbo-spring-boot-starter-2.7.1.jar;E:\programing\softwares\maven-3.6.3\maven_repository\org\apache\dubbo\dubbo-spring-boot-autoconfigure\2.7.1\dubbo-spring-boot-autoconfigure-2.7.1.jar;E:\programing\softwares\maven-3.6.3\maven_repository\org\apache\dubbo\dubbo-spring-boot-autoconfigure-compatible\2.7.1\dubbo-spring-boot-autoconfigure-compatible-2.7.1.jar;E:\self_update\2_projects\self01\lottery-infrastructure\target\lottery-infrastructure-1.0-SNAPSHOT.jar;E:\self_update\2_projects\self01\lottery-rpc\target\lottery-rpc.jar;E:\self_update\2_projects\self01\lottery-common\target\lottery-common-1.0-SNAPSHOT.jar;"/>
+    <property name="java.vm.vendor" value="Amazon.com Inc."/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://aws.amazon.com/corretto/"/>
+    <property name="user.timezone" value="Asia/Shanghai"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="18"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="CN"/>
+    <property name="sun.boot.library.path" value="E:\programing\tools\jdk1.8\bin"/>
+    <property name="sun.java.command" value="C:\Users\98691\AppData\Local\Temp\surefire3603520455364418980\surefirebooter8709759532141068929.jar C:\Users\98691\AppData\Local\Temp\surefire3603520455364418980 2023-07-20T18-30-39_162-jvmRun1 surefire12606682305726391233tmp surefire_06768804477317785976tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="E:\self_update\2_projects\self01\lottery-interfaces\target\test-classes;E:\self_update\2_projects\self01\lottery-interfaces\target\classes;E:\programing\softwares\maven-3.6.3\maven_repository\org\springframework\boot\spring-boot-starter-web\2.3.5.RELEASE\spring-boot-starter-web-2.3.5.RELEASE.jar;E:\programing\softwares\maven-3.6.3\maven_repository\org\springframework\boot\spring-boot-starter\2.3.5.RELEASE\spring-boot-starter-2.3.5.RELEASE.jar;E:\programing\softwares\maven-3.6.3\maven_repository\org\springframework\boot\spring-boot\2.3.5.RELEASE\spring-boot-2.3.5.RELEASE.jar;E:\programing\softwares\maven-3.6.3\maven_repository\org\springframework\boot\spring-boot-autoconfigure\2.3.5.RELEASE\spring-boot-autoconfigure-2.3.5.RELEASE.jar;E:\programing\softwares\maven-3.6.3\maven_repository\org\springframework\boot\spring-boot-starter-logging\2.3.5.RELEASE\spring-boot-starter-logging-2.3.5.RELEASE.jar;E:\programing\softwares\maven-3.6.3\maven_repository\ch\qos\logback\logback-classic\1.2.3\logback-classic-1.2.3.jar;E:\programing\softwares\maven-3.6.3\maven_repository\ch\qos\logback\logback-core\1.2.3\logback-core-1.2.3.jar;E:\programing\softwares\maven-3.6.3\maven_repository\org\apache\logging\log4j\log4j-to-slf4j\2.13.3\log4j-to-slf4j-2.13.3.jar;E:\programing\softwares\maven-3.6.3\maven_repository\org\apache\logging\log4j\log4j-api\2.13.3\log4j-api-2.13.3.jar;E:\programing\softwares\maven-3.6.3\maven_repository\org\slf4j\jul-to-slf4j\1.7.30\jul-to-slf4j-1.7.30.jar;E:\programing\softwares\maven-3.6.3\maven_repository\jakarta\annotation\jakarta.annotation-api\1.3.5\jakarta.annotation-api-1.3.5.jar;E:\programing\softwares\maven-3.6.3\maven_repository\org\springframework\boot\spring-boot-starter-json\2.3.5.RELEASE\spring-boot-starter-json-2.3.5.RELEASE.jar;E:\programing\softwares\maven-3.6.3\maven_repository\com\fasterxml\jackson\core\jackson-databind\2.11.3\jackson-databind-2.11.3.jar;E:\programing\softwares\maven-3.6.3\maven_repository\com\fasterxml\jackson\core\jackson-annotations\2.11.3\jackson-annotations-2.11.3.jar;E:\programing\softwares\maven-3.6.3\maven_repository\com\fasterxml\jackson\core\jackson-core\2.11.3\jackson-core-2.11.3.jar;E:\programing\softwares\maven-3.6.3\maven_repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.11.3\jackson-datatype-jdk8-2.11.3.jar;E:\programing\softwares\maven-3.6.3\maven_repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.11.3\jackson-datatype-jsr310-2.11.3.jar;E:\programing\softwares\maven-3.6.3\maven_repository\com\fasterxml\jackson\module\jackson-module-parameter-names\2.11.3\jackson-module-parameter-names-2.11.3.jar;E:\programing\softwares\maven-3.6.3\maven_repository\org\springframework\boot\spring-boot-starter-tomcat\2.3.5.RELEASE\spring-boot-starter-tomcat-2.3.5.RELEASE.jar;E:\programing\softwares\maven-3.6.3\maven_repository\org\apache\tomcat\embed\tomcat-embed-core\9.0.39\tomcat-embed-core-9.0.39.jar;E:\programing\softwares\maven-3.6.3\maven_repository\org\glassfish\jakarta.el\3.0.3\jakarta.el-3.0.3.jar;E:\programing\softwares\maven-3.6.3\maven_repository\org\apache\tomcat\embed\tomcat-embed-websocket\9.0.39\tomcat-embed-websocket-9.0.39.jar;E:\programing\softwares\maven-3.6.3\maven_repository\org\springframework\spring-web\5.2.10.RELEASE\spring-web-5.2.10.RELEASE.jar;E:\programing\softwares\maven-3.6.3\maven_repository\org\springframework\spring-beans\5.2.10.RELEASE\spring-beans-5.2.10.RELEASE.jar;E:\programing\softwares\maven-3.6.3\maven_repository\org\springframework\spring-webmvc\5.2.10.RELEASE\spring-webmvc-5.2.10.RELEASE.jar;E:\programing\softwares\maven-3.6.3\maven_repository\org\springframework\spring-aop\5.2.10.RELEASE\spring-aop-5.2.10.RELEASE.jar;E:\programing\softwares\maven-3.6.3\maven_repository\org\springframework\spring-expression\5.2.10.RELEASE\spring-expression-5.2.10.RELEASE.jar;E:\programing\softwares\maven-3.6.3\maven_repository\org\springframework\boot\spring-boot-starter-test\2.3.5.RELEASE\spring-boot-starter-test-2.3.5.RELEASE.jar;E:\programing\softwares\maven-3.6.3\maven_repository\org\springframework\boot\spring-boot-test\2.3.5.RELEASE\spring-boot-test-2.3.5.RELEASE.jar;E:\programing\softwares\maven-3.6.3\maven_repository\org\springframework\boot\spring-boot-test-autoconfigure\2.3.5.RELEASE\spring-boot-test-autoconfigure-2.3.5.RELEASE.jar;E:\programing\softwares\maven-3.6.3\maven_repository\com\jayway\jsonpath\json-path\2.4.0\json-path-2.4.0.jar;E:\programing\softwares\maven-3.6.3\maven_repository\net\minidev\json-smart\2.3\json-smart-2.3.jar;E:\programing\softwares\maven-3.6.3\maven_repository\net\minidev\accessors-smart\1.2\accessors-smart-1.2.jar;E:\programing\softwares\maven-3.6.3\maven_repository\org\ow2\asm\asm\5.0.4\asm-5.0.4.jar;E:\programing\softwares\maven-3.6.3\maven_repository\org\slf4j\slf4j-api\1.7.30\slf4j-api-1.7.30.jar;E:\programing\softwares\maven-3.6.3\maven_repository\jakarta\xml\bind\jakarta.xml.bind-api\2.3.3\jakarta.xml.bind-api-2.3.3.jar;E:\programing\softwares\maven-3.6.3\maven_repository\jakarta\activation\jakarta.activation-api\1.2.2\jakarta.activation-api-1.2.2.jar;E:\programing\softwares\maven-3.6.3\maven_repository\org\assertj\assertj-core\3.16.1\assertj-core-3.16.1.jar;E:\programing\softwares\maven-3.6.3\maven_repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;E:\programing\softwares\maven-3.6.3\maven_repository\org\junit\jupiter\junit-jupiter\5.6.3\junit-jupiter-5.6.3.jar;E:\programing\softwares\maven-3.6.3\maven_repository\org\junit\jupiter\junit-jupiter-api\5.6.3\junit-jupiter-api-5.6.3.jar;E:\programing\softwares\maven-3.6.3\maven_repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;E:\programing\softwares\maven-3.6.3\maven_repository\org\junit\platform\junit-platform-commons\1.6.3\junit-platform-commons-1.6.3.jar;E:\programing\softwares\maven-3.6.3\maven_repository\org\junit\jupiter\junit-jupiter-params\5.6.3\junit-jupiter-params-5.6.3.jar;E:\programing\softwares\maven-3.6.3\maven_repository\org\junit\jupiter\junit-jupiter-engine\5.6.3\junit-jupiter-engine-5.6.3.jar;E:\programing\softwares\maven-3.6.3\maven_repository\org\junit\vintage\junit-vintage-engine\5.6.3\junit-vintage-engine-5.6.3.jar;E:\programing\softwares\maven-3.6.3\maven_repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;E:\programing\softwares\maven-3.6.3\maven_repository\org\junit\platform\junit-platform-engine\1.6.3\junit-platform-engine-1.6.3.jar;E:\programing\softwares\maven-3.6.3\maven_repository\org\mockito\mockito-core\3.3.3\mockito-core-3.3.3.jar;E:\programing\softwares\maven-3.6.3\maven_repository\net\bytebuddy\byte-buddy\1.10.17\byte-buddy-1.10.17.jar;E:\programing\softwares\maven-3.6.3\maven_repository\net\bytebuddy\byte-buddy-agent\1.10.17\byte-buddy-agent-1.10.17.jar;E:\programing\softwares\maven-3.6.3\maven_repository\org\objenesis\objenesis\2.6\objenesis-2.6.jar;E:\programing\softwares\maven-3.6.3\maven_repository\org\mockito\mockito-junit-jupiter\3.3.3\mockito-junit-jupiter-3.3.3.jar;E:\programing\softwares\maven-3.6.3\maven_repository\org\skyscreamer\jsonassert\1.5.0\jsonassert-1.5.0.jar;E:\programing\softwares\maven-3.6.3\maven_repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;E:\programing\softwares\maven-3.6.3\maven_repository\org\springframework\spring-core\5.2.10.RELEASE\spring-core-5.2.10.RELEASE.jar;E:\programing\softwares\maven-3.6.3\maven_repository\org\springframework\spring-jcl\5.2.10.RELEASE\spring-jcl-5.2.10.RELEASE.jar;E:\programing\softwares\maven-3.6.3\maven_repository\org\springframework\spring-test\5.2.10.RELEASE\spring-test-5.2.10.RELEASE.jar;E:\programing\softwares\maven-3.6.3\maven_repository\org\xmlunit\xmlunit-core\2.7.0\xmlunit-core-2.7.0.jar;E:\programing\softwares\maven-3.6.3\maven_repository\org\mybatis\spring\boot\mybatis-spring-boot-starter\2.1.4\mybatis-spring-boot-starter-2.1.4.jar;E:\programing\softwares\maven-3.6.3\maven_repository\org\springframework\boot\spring-boot-starter-jdbc\2.3.5.RELEASE\spring-boot-starter-jdbc-2.3.5.RELEASE.jar;E:\programing\softwares\maven-3.6.3\maven_repository\com\zaxxer\HikariCP\3.4.5\HikariCP-3.4.5.jar;E:\programing\softwares\maven-3.6.3\maven_repository\org\springframework\spring-jdbc\5.2.10.RELEASE\spring-jdbc-5.2.10.RELEASE.jar;E:\programing\softwares\maven-3.6.3\maven_repository\org\springframework\spring-tx\5.2.10.RELEASE\spring-tx-5.2.10.RELEASE.jar;E:\programing\softwares\maven-3.6.3\maven_repository\org\mybatis\spring\boot\mybatis-spring-boot-autoconfigure\2.1.4\mybatis-spring-boot-autoconfigure-2.1.4.jar;E:\programing\softwares\maven-3.6.3\maven_repository\org\mybatis\mybatis\3.5.6\mybatis-3.5.6.jar;E:\programing\softwares\maven-3.6.3\maven_repository\org\mybatis\mybatis-spring\2.0.6\mybatis-spring-2.0.6.jar;E:\programing\softwares\maven-3.6.3\maven_repository\mysql\mysql-connector-java\8.0.26\mysql-connector-java-8.0.26.jar;E:\programing\softwares\maven-3.6.3\maven_repository\com\alibaba\fastjson\1.2.58\fastjson-1.2.58.jar;E:\programing\softwares\maven-3.6.3\maven_repository\org\apache\commons\commons-lang3\3.8\commons-lang3-3.8.jar;E:\programing\softwares\maven-3.6.3\maven_repository\junit\junit\4.12\junit-4.12.jar;E:\programing\softwares\maven-3.6.3\maven_repository\org\hamcrest\hamcrest-core\2.2\hamcrest-core-2.2.jar;E:\programing\softwares\maven-3.6.3\maven_repository\org\apache\dubbo\dubbo\2.7.1\dubbo-2.7.1.jar;E:\programing\softwares\maven-3.6.3\maven_repository\org\springframework\spring-context\5.2.10.RELEASE\spring-context-5.2.10.RELEASE.jar;E:\programing\softwares\maven-3.6.3\maven_repository\org\javassist\javassist\3.20.0-GA\javassist-3.20.0-GA.jar;E:\programing\softwares\maven-3.6.3\maven_repository\io\netty\netty-all\4.1.53.Final\netty-all-4.1.53.Final.jar;E:\programing\softwares\maven-3.6.3\maven_repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar;E:\programing\softwares\maven-3.6.3\maven_repository\org\yaml\snakeyaml\1.26\snakeyaml-1.26.jar;E:\programing\softwares\maven-3.6.3\maven_repository\org\apache\dubbo\dubbo-spring-boot-starter\2.7.1\dubbo-spring-boot-starter-2.7.1.jar;E:\programing\softwares\maven-3.6.3\maven_repository\org\apache\dubbo\dubbo-spring-boot-autoconfigure\2.7.1\dubbo-spring-boot-autoconfigure-2.7.1.jar;E:\programing\softwares\maven-3.6.3\maven_repository\org\apache\dubbo\dubbo-spring-boot-autoconfigure-compatible\2.7.1\dubbo-spring-boot-autoconfigure-compatible-2.7.1.jar;E:\self_update\2_projects\self01\lottery-infrastructure\target\lottery-infrastructure-1.0-SNAPSHOT.jar;E:\self_update\2_projects\self01\lottery-rpc\target\lottery-rpc.jar;E:\self_update\2_projects\self01\lottery-common\target\lottery-common-1.0-SNAPSHOT.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\98691"/>
+    <property name="user.language" value="zh"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2022-07-19"/>
+    <property name="java.home" value="E:\programing\tools\jdk1.8"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="E:\self_update\2_projects\self01\lottery-interfaces"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\98691\AppData\Local\Temp\surefire3603520455364418980\surefirebooter8709759532141068929.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="18.0.2+9-FR"/>
+    <property name="user.name" value="98691"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Corretto-18.0.2.9.1"/>
+    <property name="localRepository" value="E:\programing\softwares\maven-3.6.3\maven_repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/corretto/corretto-18/issues/"/>
+    <property name="java.io.tmpdir" value="C:\Users\98691\AppData\Local\Temp\"/>
+    <property name="idea.version" value="2021.2.3"/>
+    <property name="java.version" value="18.0.2"/>
+    <property name="user.dir" value="E:\self_update\2_projects\self01\lottery-interfaces"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="GBK"/>
+    <property name="java.library.path" value="E:\programing\tools\jdk1.8\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;E:\programing\mysql\Mysql Server 8.0\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\include;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\libnvvp;C:\Program Files\Microsoft MPI\Bin\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\Nsight Compute 2021.2.1\;D:\programming\environment\anaconda\install;D:\programming\environment\anaconda\install\Library\mingw-w64\bin;D:\programming\environment\anaconda\install\Library\bin;D:\programming\environment\anaconda\install\Scripts;D:\programming\environment\Java\jdk\jdk11\install\bin;D:\programming\environment\matlab\install\runtime\win64;D:\programming\environment\matlab\install\bin;D:\programming\environment\Java\tools\apache-tomcat-10.0.12\lib;D:\programming\environment\Java\tools\apache-tomcat-10.0.12\bin;D:\programming\environment\Java\tools\apache-tomcat-10.0.12\lib\servlet-api.jar;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;D:\programming\environment\opencv\install\opencv\build\x64\vc15\bin;D:\programming\environment\opencv\install\opencv\build\include\opencv;D:\programming\environment\opencv\install\opencv\build\include\opencv2;D:\programming\environment\cygwin\install\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;D:\programming\environment\Java\tools\apache-tomcat-9.0.68\bin;D:\programming\environment\Java\tools\apache-tomcat-9.0.68\lib;E:\programing\softwares\maven-3.6.3\apache-maven-3.6.3\bin;D:\programming\environment\python\install\Scripts\;D:\programming\environment\python\install\;C:\Users\98691\AppData\Local\Microsoft\WindowsApps;D:\programming\environment\python\pychram\install\PyCharm 2021.2.3\bin;;D:\programming\environment\Java\idea\install\IntelliJ IDEA 2021.2.3\bin;;D:\programming\environment\vscode\install\Microsoft VS Code\bin;E:\useful_software\notes\adb\platform-tools_r33.0.0-windows\platform-tools;E:\useful_software\notes\miktex\install\miktex\bin\x64\;E:\useful_software\notes\textlive\texlive\2022\bin\win32;;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Amazon.com Inc."/>
+    <property name="java.vm.version" value="18.0.2+9-FR"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="maven.repo.local" value="E:\programing\softwares\maven-3.6.3\maven_repository"/>
+    <property name="java.class.version" value="62.0"/>
+  </properties>
+  <testcase name="test_insert" classname="cn.itedus.lottery.test.ApiTest" time="0.001">
+    <error message="Failed to load ApplicationContext" type="java.lang.IllegalStateException">java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'providers:dubbo:cn.itedus.lottery.IActivityBooth': Instantiation of bean failed; nested exception is java.lang.ExceptionInInitializerError
+Caused by: java.lang.ExceptionInInitializerError
+Caused by: java.lang.IllegalStateException: Failed to create adaptive instance: java.lang.IllegalStateException: Can't create adaptive extension interface org.apache.dubbo.rpc.Protocol, cause: Unable to make protected final java.lang.Class java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain) throws java.lang.ClassFormatError accessible: module java.base does not "opens java.lang" to unnamed module @1efed156
+Caused by: java.lang.IllegalStateException: Can't create adaptive extension interface org.apache.dubbo.rpc.Protocol, cause: Unable to make protected final java.lang.Class java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain) throws java.lang.ClassFormatError accessible: module java.base does not "opens java.lang" to unnamed module @1efed156
+Caused by: java.lang.reflect.InaccessibleObjectException: Unable to make protected final java.lang.Class java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain) throws java.lang.ClassFormatError accessible: module java.base does not "opens java.lang" to unnamed module @1efed156
+</error>
+    <system-out><![CDATA[18:30:42.338 [main] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class cn.itedus.lottery.test.ApiTest]
+18:30:42.341 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+18:30:42.347 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+18:30:42.376 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [cn.itedus.lottery.test.ApiTest] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+18:30:42.388 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [cn.itedus.lottery.test.ApiTest], using SpringBootContextLoader
+18:30:42.391 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [cn.itedus.lottery.test.ApiTest]: class path resource [cn/itedus/lottery/test/ApiTest-context.xml] does not exist
+18:30:42.392 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [cn.itedus.lottery.test.ApiTest]: class path resource [cn/itedus/lottery/test/ApiTestContext.groovy] does not exist
+18:30:42.392 [main] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [cn.itedus.lottery.test.ApiTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+18:30:42.393 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [cn.itedus.lottery.test.ApiTest]: ApiTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+18:30:42.423 [main] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [cn.itedus.lottery.test.ApiTest]
+18:30:42.468 [main] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [E:\self_update\2_projects\self01\lottery-interfaces\target\classes\cn\itedus\lottery\LotteryApplication.class]
+18:30:42.469 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration cn.itedus.lottery.LotteryApplication for test class cn.itedus.lottery.test.ApiTest
+18:30:42.534 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [cn.itedus.lottery.test.ApiTest]: using defaults.
+18:30:42.534 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+18:30:42.545 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@495ee280, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@4fa1c212, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@6ea2bc93, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@3116c353, org.springframework.test.context.support.DirtiesContextTestExecutionListener@f627d13, org.springframework.test.context.transaction.TransactionalTestExecutionListener@4e928fbf, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@352ff4da, org.springframework.test.context.event.EventPublishingTestExecutionListener@3224a577, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@2e32ccc5, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@748741cb, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@3e44f2a5, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@295cf707, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@1130520d, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@5f77d0f9]
+18:30:42.549 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [cn.itedus.lottery.test.ApiTest]
+18:30:42.549 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [cn.itedus.lottery.test.ApiTest]
+18:30:42.569 [main] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class cn.itedus.lottery.test.ApiTest]
+18:30:42.569 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+18:30:42.569 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+18:30:42.569 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [cn.itedus.lottery.test.ApiTest] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+18:30:42.570 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [cn.itedus.lottery.test.ApiTest], using SpringBootContextLoader
+18:30:42.570 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [cn.itedus.lottery.test.ApiTest]: class path resource [cn/itedus/lottery/test/ApiTest-context.xml] does not exist
+18:30:42.570 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [cn.itedus.lottery.test.ApiTest]: class path resource [cn/itedus/lottery/test/ApiTestContext.groovy] does not exist
+18:30:42.570 [main] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [cn.itedus.lottery.test.ApiTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+18:30:42.570 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [cn.itedus.lottery.test.ApiTest]: ApiTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+18:30:42.571 [main] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [cn.itedus.lottery.test.ApiTest]
+18:30:42.571 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration cn.itedus.lottery.LotteryApplication for test class cn.itedus.lottery.test.ApiTest
+18:30:42.572 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [cn.itedus.lottery.test.ApiTest]: using defaults.
+18:30:42.572 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+18:30:42.573 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@27adc16e, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@b83a9be, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@2609b277, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@1fd14d74, org.springframework.test.context.support.DirtiesContextTestExecutionListener@563e4951, org.springframework.test.context.transaction.TransactionalTestExecutionListener@4066c471, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@2b175c00, org.springframework.test.context.event.EventPublishingTestExecutionListener@3eb81efb, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@1ae8bcbc, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@6cdba6dc, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@7d3d101b, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@30c8681, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@5cdec700, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@6d026701]
+18:30:42.573 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [cn.itedus.lottery.test.ApiTest]
+18:30:42.573 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [cn.itedus.lottery.test.ApiTest]
+18:30:42.612 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [cn.itedus.lottery.test.ApiTest]
+18:30:42.612 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [cn.itedus.lottery.test.ApiTest]
+18:30:42.614 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [cn.itedus.lottery.test.ApiTest]
+18:30:42.614 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [cn.itedus.lottery.test.ApiTest]
+18:30:42.614 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [cn.itedus.lottery.test.ApiTest]
+18:30:42.614 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [cn.itedus.lottery.test.ApiTest]
+18:30:42.617 [main] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@3fed2870 testClass = ApiTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@77128536 testClass = ApiTest, locations = '{}', classes = '{class cn.itedus.lottery.LotteryApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@3d285d7e, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@367ffa75, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@544fa968, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@5fbe4146, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@3febb011], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true]], class annotated with @DirtiesContext [false] with mode [null].
+18:30:42.619 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [cn.itedus.lottery.test.ApiTest]
+18:30:42.619 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [cn.itedus.lottery.test.ApiTest]
+18:30:42.635 [main] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}
+2023-07-20 18:30:42.790  INFO 3684 --- [           main] o.a.dubbo.common.logger.LoggerFactory    : using logger: org.apache.dubbo.common.logger.slf4j.Slf4jLoggerAdapter
+2023-07-20 18:30:42.795  INFO 3684 --- [           main] d.s.b.c.e.WelcomeLogoApplicationListener : 
+
+ :: Dubbo Spring Boot (v2.7.1) : https://github.com/apache/incubator-dubbo-spring-boot-project
+ :: Dubbo (v2.7.1) : https://github.com/apache/incubator-dubbo
+ :: Discuss group : dev@dubbo.apache.org
+
+2023-07-20 18:30:42.799  INFO 3684 --- [           main] e.OverrideDubboConfigApplicationListener : Dubbo Config was overridden by externalized configuration {dubbo.application.name=Lottery, dubbo.application.qos-enable=false, dubbo.application.version=1.0.0, dubbo.config.multiple=true, dubbo.protocol.name=dubbo, dubbo.protocol.port=20880, dubbo.registry.address=N/A, dubbo.scan.base-packages=cn.itedus.lottery.rpc}
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.3.5.RELEASE)
+
+2023-07-20 18:30:42.892  INFO 3684 --- [           main] cn.itedus.lottery.test.ApiTest           : Starting ApiTest on DESKTOP-SFUTR2L with PID 3684 (started by 98691 in E:\self_update\2_projects\self01\lottery-interfaces)
+2023-07-20 18:30:42.893  INFO 3684 --- [           main] cn.itedus.lottery.test.ApiTest           : No active profile set, falling back to default profiles: default
+2023-07-20 18:30:43.275  INFO 3684 --- [           main] .a.d.c.s.c.a.DubboConfigBindingRegistrar : The dubbo config bean definition [name : org.apache.dubbo.config.ApplicationConfig#0, class : org.apache.dubbo.config.ApplicationConfig] has been registered.
+2023-07-20 18:30:43.276  INFO 3684 --- [           main] .a.d.c.s.c.a.DubboConfigBindingRegistrar : The BeanPostProcessor bean definition [org.apache.dubbo.config.spring.beans.factory.annotation.DubboConfigBindingBeanPostProcessor] for dubbo config bean [name : org.apache.dubbo.config.ApplicationConfig#0] has been registered.
+2023-07-20 18:30:43.276  INFO 3684 --- [           main] .a.d.c.s.c.a.DubboConfigBindingRegistrar : The dubbo config bean definition [name : org.apache.dubbo.config.RegistryConfig#0, class : org.apache.dubbo.config.RegistryConfig] has been registered.
+2023-07-20 18:30:43.276  INFO 3684 --- [           main] .a.d.c.s.c.a.DubboConfigBindingRegistrar : The BeanPostProcessor bean definition [org.apache.dubbo.config.spring.beans.factory.annotation.DubboConfigBindingBeanPostProcessor] for dubbo config bean [name : org.apache.dubbo.config.RegistryConfig#0] has been registered.
+2023-07-20 18:30:43.276  INFO 3684 --- [           main] .a.d.c.s.c.a.DubboConfigBindingRegistrar : The dubbo config bean definition [name : org.apache.dubbo.config.ProtocolConfig#0, class : org.apache.dubbo.config.ProtocolConfig] has been registered.
+2023-07-20 18:30:43.276  INFO 3684 --- [           main] .a.d.c.s.c.a.DubboConfigBindingRegistrar : The BeanPostProcessor bean definition [org.apache.dubbo.config.spring.beans.factory.annotation.DubboConfigBindingBeanPostProcessor] for dubbo config bean [name : org.apache.dubbo.config.ProtocolConfig#0] has been registered.
+2023-07-20 18:30:43.428  INFO 3684 --- [           main] b.f.a.ServiceAnnotationBeanPostProcessor :  [DUBBO] BeanNameGenerator bean can't be found in BeanFactory with name [org.springframework.context.annotation.internalConfigurationBeanNameGenerator], dubbo version: 2.7.1, current host: 192.168.1.103
+2023-07-20 18:30:43.429  INFO 3684 --- [           main] b.f.a.ServiceAnnotationBeanPostProcessor :  [DUBBO] BeanNameGenerator will be a instance of org.springframework.context.annotation.AnnotationBeanNameGenerator , it maybe a potential problem on bean name generation., dubbo version: 2.7.1, current host: 192.168.1.103
+2023-07-20 18:30:43.442  INFO 3684 --- [           main] b.f.a.ServiceAnnotationBeanPostProcessor :  [DUBBO] The BeanDefinition[Root bean: class [org.apache.dubbo.config.spring.ServiceBean]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] of ServiceBean has been registered with name : providers:dubbo:cn.itedus.lottery.IActivityBooth, dubbo version: 2.7.1, current host: 192.168.1.103
+2023-07-20 18:30:43.442  INFO 3684 --- [           main] b.f.a.ServiceAnnotationBeanPostProcessor :  [DUBBO] 1 annotated Dubbo's @Service Components { [Bean definition with name 'activityBooth': Generic bean: class [cn.itedus.lottery.interfaces.ActivityBooth]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [E:\self_update\2_projects\self01\lottery-interfaces\target\classes\cn\itedus\lottery\interfaces\ActivityBooth.class]] } were scanned under package[cn.itedus.lottery], dubbo version: 2.7.1, current host: 192.168.1.103
+2023-07-20 18:30:43.443  INFO 3684 --- [           main] b.f.a.ServiceAnnotationBeanPostProcessor :  [DUBBO] BeanNameGenerator bean can't be found in BeanFactory with name [org.springframework.context.annotation.internalConfigurationBeanNameGenerator], dubbo version: 2.7.1, current host: 192.168.1.103
+2023-07-20 18:30:43.443  INFO 3684 --- [           main] b.f.a.ServiceAnnotationBeanPostProcessor :  [DUBBO] BeanNameGenerator will be a instance of org.springframework.context.annotation.AnnotationBeanNameGenerator , it maybe a potential problem on bean name generation., dubbo version: 2.7.1, current host: 192.168.1.103
+2023-07-20 18:30:43.443  WARN 3684 --- [           main] b.f.a.ServiceAnnotationBeanPostProcessor :  [DUBBO] No Spring Bean annotating Dubbo's @Service was found under package[cn.itedus.lottery.rpc], dubbo version: 2.7.1, current host: 192.168.1.103
+2023-07-20 18:30:43.459  INFO 3684 --- [           main] o.s.c.a.ConfigurationClassPostProcessor  : Cannot enhance @Configuration bean definition 'org.apache.dubbo.spring.boot.autoconfigure.DubboRelaxedBinding2AutoConfiguration' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+2023-07-20 18:30:43.459  INFO 3684 --- [           main] o.s.c.a.ConfigurationClassPostProcessor  : Cannot enhance @Configuration bean definition 'org.apache.dubbo.spring.boot.autoconfigure.DubboAutoConfiguration' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+2023-07-20 18:30:43.584  INFO 3684 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'relaxedDubboConfigBinder' of type [org.apache.dubbo.spring.boot.autoconfigure.BinderDubboConfigBinder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-07-20 18:30:43.611  INFO 3684 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'relaxedDubboConfigBinder' of type [org.apache.dubbo.spring.boot.autoconfigure.BinderDubboConfigBinder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-07-20 18:30:43.612  INFO 3684 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'relaxedDubboConfigBinder' of type [org.apache.dubbo.spring.boot.autoconfigure.BinderDubboConfigBinder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-07-20 18:30:43.956  INFO 3684 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-07-20 18:30:44.142  INFO 3684 --- [           main] .f.a.DubboConfigBindingBeanPostProcessor : The properties of bean [name : org.apache.dubbo.config.ApplicationConfig#0] have been binding by prefix of configuration properties : dubbo.application
+2023-07-20 18:30:44.148  INFO 3684 --- [           main] .f.a.DubboConfigBindingBeanPostProcessor : The properties of bean [name : org.apache.dubbo.config.RegistryConfig#0] have been binding by prefix of configuration properties : dubbo.registry
+2023-07-20 18:30:44.153  INFO 3684 --- [           main] .f.a.DubboConfigBindingBeanPostProcessor : The properties of bean [name : org.apache.dubbo.config.ProtocolConfig#0] have been binding by prefix of configuration properties : dubbo.protocol
+2023-07-20 18:30:44.553  WARN 3684 --- [           main] o.s.w.c.s.GenericWebApplicationContext   : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'providers:dubbo:cn.itedus.lottery.IActivityBooth': Instantiation of bean failed; nested exception is java.lang.ExceptionInInitializerError
+2023-07-20 18:30:44.554  INFO 3684 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2023-07-20 18:30:44.554  INFO 3684 --- [           main] f.a.ReferenceAnnotationBeanPostProcessor : class org.apache.dubbo.config.spring.beans.factory.annotation.ReferenceAnnotationBeanPostProcessor was destroying!
+2023-07-20 18:30:44.561  INFO 3684 --- [           main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-07-20 18:30:44.567 ERROR 3684 --- [           main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'providers:dubbo:cn.itedus.lottery.IActivityBooth': Instantiation of bean failed; nested exception is java.lang.ExceptionInInitializerError
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1318) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1213) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:556) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:897) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879) ~[spring-context-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551) ~[spring-context-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758) ~[spring-boot-2.3.5.RELEASE.jar:2.3.5.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750) ~[spring-boot-2.3.5.RELEASE.jar:2.3.5.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:405) ~[spring-boot-2.3.5.RELEASE.jar:2.3.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) ~[spring-boot-2.3.5.RELEASE.jar:2.3.5.RELEASE]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:120) ~[spring-boot-test-2.3.5.RELEASE.jar:2.3.5.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124) ~[spring-test-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:123) ~[spring-test-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190) ~[spring-test-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132) ~[spring-test-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:244) ~[spring-test-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227) ~[spring-test-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289) ~[spring-test-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) ~[junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291) ~[spring-test-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246) ~[spring-test-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) ~[spring-test-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) ~[junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) ~[spring-test-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) ~[spring-test-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) ~[junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190) ~[spring-test-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137) ~[junit-4.12.jar:4.12]
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115) ~[junit-4.12.jar:4.12]
+	at org.junit.vintage.engine.execution.RunnerExecutor.execute(RunnerExecutor.java:43) ~[junit-vintage-engine-5.6.3.jar:5.6.3]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[na:na]
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133) ~[na:na]
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1845) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[na:na]
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150) ~[na:na]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596) ~[na:na]
+	at org.junit.vintage.engine.VintageTestEngine.executeAllChildren(VintageTestEngine.java:82) ~[junit-vintage-engine-5.6.3.jar:5.6.3]
+	at org.junit.vintage.engine.VintageTestEngine.execute(VintageTestEngine.java:73) ~[junit-vintage-engine-5.6.3.jar:5.6.3]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:220) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$6(DefaultLauncher.java:188) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:202) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:181) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:128) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:150) ~[surefire-junit-platform-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:124) ~[surefire-junit-platform-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384) ~[surefire-booter-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345) ~[surefire-booter-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126) ~[surefire-booter-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418) ~[surefire-booter-2.22.2.jar:2.22.2]
+Caused by: java.lang.ExceptionInInitializerError: null
+	at java.base/jdk.internal.misc.Unsafe.ensureClassInitialized0(Native Method) ~[na:na]
+	at java.base/jdk.internal.misc.Unsafe.ensureClassInitialized(Unsafe.java:1160) ~[na:na]
+	at java.base/jdk.internal.reflect.MethodHandleAccessorFactory.ensureClassInitialized(MethodHandleAccessorFactory.java:300) ~[na:na]
+	at java.base/jdk.internal.reflect.MethodHandleAccessorFactory.newConstructorAccessor(MethodHandleAccessorFactory.java:103) ~[na:na]
+	at java.base/jdk.internal.reflect.ReflectionFactory.newConstructorAccessor(ReflectionFactory.java:236) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.acquireConstructorAccessor(Constructor.java:546) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:496) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483) ~[na:na]
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:204) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:87) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1310) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	... 62 common frames omitted
+Caused by: java.lang.IllegalStateException: Failed to create adaptive instance: java.lang.IllegalStateException: Can't create adaptive extension interface org.apache.dubbo.rpc.Protocol, cause: Unable to make protected final java.lang.Class java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain) throws java.lang.ClassFormatError accessible: module java.base does not "opens java.lang" to unnamed module @1efed156
+	at org.apache.dubbo.common.extension.ExtensionLoader.getAdaptiveExtension(ExtensionLoader.java:482) ~[dubbo-2.7.1.jar:2.7.1]
+	at org.apache.dubbo.config.ServiceConfig.<clinit>(ServiceConfig.java:90) ~[dubbo-2.7.1.jar:2.7.1]
+	... 73 common frames omitted
+Caused by: java.lang.IllegalStateException: Can't create adaptive extension interface org.apache.dubbo.rpc.Protocol, cause: Unable to make protected final java.lang.Class java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain) throws java.lang.ClassFormatError accessible: module java.base does not "opens java.lang" to unnamed module @1efed156
+	at org.apache.dubbo.common.extension.ExtensionLoader.createAdaptiveExtension(ExtensionLoader.java:843) ~[dubbo-2.7.1.jar:2.7.1]
+	at org.apache.dubbo.common.extension.ExtensionLoader.getAdaptiveExtension(ExtensionLoader.java:478) ~[dubbo-2.7.1.jar:2.7.1]
+	... 74 common frames omitted
+Caused by: java.lang.reflect.InaccessibleObjectException: Unable to make protected final java.lang.Class java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain) throws java.lang.ClassFormatError accessible: module java.base does not "opens java.lang" to unnamed module @1efed156
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:354) ~[na:na]
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:297) ~[na:na]
+	at java.base/java.lang.reflect.Method.checkCanSetAccessible(Method.java:200) ~[na:na]
+	at java.base/java.lang.reflect.Method.setAccessible(Method.java:194) ~[na:na]
+	at javassist.ClassPool.toClass2(ClassPool.java:1181) ~[javassist-3.20.0-GA.jar:na]
+	at javassist.ClassPool.toClass(ClassPool.java:1164) ~[javassist-3.20.0-GA.jar:na]
+	at javassist.CtClass.toClass(CtClass.java:1305) ~[javassist-3.20.0-GA.jar:na]
+	at org.apache.dubbo.common.compiler.support.JavassistCompiler.doCompile(JavassistCompiler.java:83) ~[dubbo-2.7.1.jar:2.7.1]
+	at org.apache.dubbo.common.compiler.support.AbstractCompiler.compile(AbstractCompiler.java:59) ~[dubbo-2.7.1.jar:2.7.1]
+	at org.apache.dubbo.common.compiler.support.AdaptiveCompiler.compile(AdaptiveCompiler.java:45) ~[dubbo-2.7.1.jar:2.7.1]
+	at org.apache.dubbo.common.extension.ExtensionLoader.createAdaptiveExtensionClass(ExtensionLoader.java:859) ~[dubbo-2.7.1.jar:2.7.1]
+	at org.apache.dubbo.common.extension.ExtensionLoader.getAdaptiveExtensionClass(ExtensionLoader.java:852) ~[dubbo-2.7.1.jar:2.7.1]
+	at org.apache.dubbo.common.extension.ExtensionLoader.createAdaptiveExtension(ExtensionLoader.java:841) ~[dubbo-2.7.1.jar:2.7.1]
+	... 75 common frames omitted
+
+2023-07-20 18:30:44.569 ERROR 3684 --- [           main] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@27adc16e] to prepare test instance [cn.itedus.lottery.test.ApiTest@299b9851]
+
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:132) ~[spring-test-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:123) ~[spring-test-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190) ~[spring-test-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132) ~[spring-test-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:244) ~[spring-test-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227) ~[spring-test-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289) ~[spring-test-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) ~[junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291) ~[spring-test-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246) ~[spring-test-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) ~[spring-test-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) ~[junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) ~[spring-test-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) ~[spring-test-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) ~[junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190) ~[spring-test-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137) ~[junit-4.12.jar:4.12]
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115) ~[junit-4.12.jar:4.12]
+	at org.junit.vintage.engine.execution.RunnerExecutor.execute(RunnerExecutor.java:43) ~[junit-vintage-engine-5.6.3.jar:5.6.3]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[na:na]
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133) ~[na:na]
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1845) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[na:na]
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150) ~[na:na]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596) ~[na:na]
+	at org.junit.vintage.engine.VintageTestEngine.executeAllChildren(VintageTestEngine.java:82) ~[junit-vintage-engine-5.6.3.jar:5.6.3]
+	at org.junit.vintage.engine.VintageTestEngine.execute(VintageTestEngine.java:73) ~[junit-vintage-engine-5.6.3.jar:5.6.3]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:220) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$6(DefaultLauncher.java:188) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:202) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:181) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:128) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:150) ~[surefire-junit-platform-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:124) ~[surefire-junit-platform-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384) ~[surefire-booter-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345) ~[surefire-booter-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126) ~[surefire-booter-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418) ~[surefire-booter-2.22.2.jar:2.22.2]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'providers:dubbo:cn.itedus.lottery.IActivityBooth': Instantiation of bean failed; nested exception is java.lang.ExceptionInInitializerError
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1318) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1213) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:556) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:897) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879) ~[spring-context-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551) ~[spring-context-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758) ~[spring-boot-2.3.5.RELEASE.jar:2.3.5.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750) ~[spring-boot-2.3.5.RELEASE.jar:2.3.5.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:405) ~[spring-boot-2.3.5.RELEASE.jar:2.3.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) ~[spring-boot-2.3.5.RELEASE.jar:2.3.5.RELEASE]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:120) ~[spring-boot-test-2.3.5.RELEASE.jar:2.3.5.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124) ~[spring-test-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	... 45 common frames omitted
+Caused by: java.lang.ExceptionInInitializerError: null
+	at java.base/jdk.internal.misc.Unsafe.ensureClassInitialized0(Native Method) ~[na:na]
+	at java.base/jdk.internal.misc.Unsafe.ensureClassInitialized(Unsafe.java:1160) ~[na:na]
+	at java.base/jdk.internal.reflect.MethodHandleAccessorFactory.ensureClassInitialized(MethodHandleAccessorFactory.java:300) ~[na:na]
+	at java.base/jdk.internal.reflect.MethodHandleAccessorFactory.newConstructorAccessor(MethodHandleAccessorFactory.java:103) ~[na:na]
+	at java.base/jdk.internal.reflect.ReflectionFactory.newConstructorAccessor(ReflectionFactory.java:236) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.acquireConstructorAccessor(Constructor.java:546) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:496) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483) ~[na:na]
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:204) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:87) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1310) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	... 62 common frames omitted
+Caused by: java.lang.IllegalStateException: Failed to create adaptive instance: java.lang.IllegalStateException: Can't create adaptive extension interface org.apache.dubbo.rpc.Protocol, cause: Unable to make protected final java.lang.Class java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain) throws java.lang.ClassFormatError accessible: module java.base does not "opens java.lang" to unnamed module @1efed156
+	at org.apache.dubbo.common.extension.ExtensionLoader.getAdaptiveExtension(ExtensionLoader.java:482) ~[dubbo-2.7.1.jar:2.7.1]
+	at org.apache.dubbo.config.ServiceConfig.<clinit>(ServiceConfig.java:90) ~[dubbo-2.7.1.jar:2.7.1]
+	... 73 common frames omitted
+Caused by: java.lang.IllegalStateException: Can't create adaptive extension interface org.apache.dubbo.rpc.Protocol, cause: Unable to make protected final java.lang.Class java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain) throws java.lang.ClassFormatError accessible: module java.base does not "opens java.lang" to unnamed module @1efed156
+	at org.apache.dubbo.common.extension.ExtensionLoader.createAdaptiveExtension(ExtensionLoader.java:843) ~[dubbo-2.7.1.jar:2.7.1]
+	at org.apache.dubbo.common.extension.ExtensionLoader.getAdaptiveExtension(ExtensionLoader.java:478) ~[dubbo-2.7.1.jar:2.7.1]
+	... 74 common frames omitted
+Caused by: java.lang.reflect.InaccessibleObjectException: Unable to make protected final java.lang.Class java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain) throws java.lang.ClassFormatError accessible: module java.base does not "opens java.lang" to unnamed module @1efed156
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:354) ~[na:na]
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:297) ~[na:na]
+	at java.base/java.lang.reflect.Method.checkCanSetAccessible(Method.java:200) ~[na:na]
+	at java.base/java.lang.reflect.Method.setAccessible(Method.java:194) ~[na:na]
+	at javassist.ClassPool.toClass2(ClassPool.java:1181) ~[javassist-3.20.0-GA.jar:na]
+	at javassist.ClassPool.toClass(ClassPool.java:1164) ~[javassist-3.20.0-GA.jar:na]
+	at javassist.CtClass.toClass(CtClass.java:1305) ~[javassist-3.20.0-GA.jar:na]
+	at org.apache.dubbo.common.compiler.support.JavassistCompiler.doCompile(JavassistCompiler.java:83) ~[dubbo-2.7.1.jar:2.7.1]
+	at org.apache.dubbo.common.compiler.support.AbstractCompiler.compile(AbstractCompiler.java:59) ~[dubbo-2.7.1.jar:2.7.1]
+	at org.apache.dubbo.common.compiler.support.AdaptiveCompiler.compile(AdaptiveCompiler.java:45) ~[dubbo-2.7.1.jar:2.7.1]
+	at org.apache.dubbo.common.extension.ExtensionLoader.createAdaptiveExtensionClass(ExtensionLoader.java:859) ~[dubbo-2.7.1.jar:2.7.1]
+	at org.apache.dubbo.common.extension.ExtensionLoader.getAdaptiveExtensionClass(ExtensionLoader.java:852) ~[dubbo-2.7.1.jar:2.7.1]
+	at org.apache.dubbo.common.extension.ExtensionLoader.createAdaptiveExtension(ExtensionLoader.java:841) ~[dubbo-2.7.1.jar:2.7.1]
+	... 75 common frames omitted
+
+]]></system-out>
+  </testcase>
+  <testcase name="test_select" classname="cn.itedus.lottery.test.ApiTest" time="0">
+    <error message="Failed to load ApplicationContext" type="java.lang.IllegalStateException">java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'providers:dubbo:cn.itedus.lottery.IActivityBooth': Instantiation of bean failed; nested exception is java.lang.NoClassDefFoundError: Could not initialize class org.apache.dubbo.config.spring.ServiceBean
+Caused by: java.lang.NoClassDefFoundError: Could not initialize class org.apache.dubbo.config.spring.ServiceBean
+Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.ExceptionInInitializerError [in thread "main"]
+</error>
+    <system-out><![CDATA[2023-07-20 18:30:44.591  INFO 3684 --- [           main] e.OverrideDubboConfigApplicationListener : Dubbo Config was overridden by externalized configuration {dubbo.application.name=Lottery, dubbo.application.qos-enable=false, dubbo.application.version=1.0.0, dubbo.config.multiple=true, dubbo.protocol.name=dubbo, dubbo.protocol.port=20880, dubbo.registry.address=N/A, dubbo.scan.base-packages=cn.itedus.lottery.rpc}
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.3.5.RELEASE)
+
+2023-07-20 18:30:44.595  INFO 3684 --- [           main] cn.itedus.lottery.test.ApiTest           : Starting ApiTest on DESKTOP-SFUTR2L with PID 3684 (started by 98691 in E:\self_update\2_projects\self01\lottery-interfaces)
+2023-07-20 18:30:44.595  INFO 3684 --- [           main] cn.itedus.lottery.test.ApiTest           : No active profile set, falling back to default profiles: default
+2023-07-20 18:30:44.672  INFO 3684 --- [           main] .a.d.c.s.c.a.DubboConfigBindingRegistrar : The dubbo config bean definition [name : org.apache.dubbo.config.ApplicationConfig#0, class : org.apache.dubbo.config.ApplicationConfig] has been registered.
+2023-07-20 18:30:44.672  INFO 3684 --- [           main] .a.d.c.s.c.a.DubboConfigBindingRegistrar : The BeanPostProcessor bean definition [org.apache.dubbo.config.spring.beans.factory.annotation.DubboConfigBindingBeanPostProcessor] for dubbo config bean [name : org.apache.dubbo.config.ApplicationConfig#0] has been registered.
+2023-07-20 18:30:44.673  INFO 3684 --- [           main] .a.d.c.s.c.a.DubboConfigBindingRegistrar : The dubbo config bean definition [name : org.apache.dubbo.config.RegistryConfig#0, class : org.apache.dubbo.config.RegistryConfig] has been registered.
+2023-07-20 18:30:44.673  INFO 3684 --- [           main] .a.d.c.s.c.a.DubboConfigBindingRegistrar : The BeanPostProcessor bean definition [org.apache.dubbo.config.spring.beans.factory.annotation.DubboConfigBindingBeanPostProcessor] for dubbo config bean [name : org.apache.dubbo.config.RegistryConfig#0] has been registered.
+2023-07-20 18:30:44.673  INFO 3684 --- [           main] .a.d.c.s.c.a.DubboConfigBindingRegistrar : The dubbo config bean definition [name : org.apache.dubbo.config.ProtocolConfig#0, class : org.apache.dubbo.config.ProtocolConfig] has been registered.
+2023-07-20 18:30:44.673  INFO 3684 --- [           main] .a.d.c.s.c.a.DubboConfigBindingRegistrar : The BeanPostProcessor bean definition [org.apache.dubbo.config.spring.beans.factory.annotation.DubboConfigBindingBeanPostProcessor] for dubbo config bean [name : org.apache.dubbo.config.ProtocolConfig#0] has been registered.
+2023-07-20 18:30:44.697  INFO 3684 --- [           main] b.f.a.ServiceAnnotationBeanPostProcessor :  [DUBBO] BeanNameGenerator bean can't be found in BeanFactory with name [org.springframework.context.annotation.internalConfigurationBeanNameGenerator], dubbo version: 2.7.1, current host: 192.168.1.103
+2023-07-20 18:30:44.697  INFO 3684 --- [           main] b.f.a.ServiceAnnotationBeanPostProcessor :  [DUBBO] BeanNameGenerator will be a instance of org.springframework.context.annotation.AnnotationBeanNameGenerator , it maybe a potential problem on bean name generation., dubbo version: 2.7.1, current host: 192.168.1.103
+2023-07-20 18:30:44.701  INFO 3684 --- [           main] b.f.a.ServiceAnnotationBeanPostProcessor :  [DUBBO] The BeanDefinition[Root bean: class [org.apache.dubbo.config.spring.ServiceBean]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] of ServiceBean has been registered with name : providers:dubbo:cn.itedus.lottery.IActivityBooth, dubbo version: 2.7.1, current host: 192.168.1.103
+2023-07-20 18:30:44.702  INFO 3684 --- [           main] b.f.a.ServiceAnnotationBeanPostProcessor :  [DUBBO] 1 annotated Dubbo's @Service Components { [Bean definition with name 'activityBooth': Generic bean: class [cn.itedus.lottery.interfaces.ActivityBooth]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [E:\self_update\2_projects\self01\lottery-interfaces\target\classes\cn\itedus\lottery\interfaces\ActivityBooth.class]] } were scanned under package[cn.itedus.lottery], dubbo version: 2.7.1, current host: 192.168.1.103
+2023-07-20 18:30:44.702  INFO 3684 --- [           main] b.f.a.ServiceAnnotationBeanPostProcessor :  [DUBBO] BeanNameGenerator bean can't be found in BeanFactory with name [org.springframework.context.annotation.internalConfigurationBeanNameGenerator], dubbo version: 2.7.1, current host: 192.168.1.103
+2023-07-20 18:30:44.702  INFO 3684 --- [           main] b.f.a.ServiceAnnotationBeanPostProcessor :  [DUBBO] BeanNameGenerator will be a instance of org.springframework.context.annotation.AnnotationBeanNameGenerator , it maybe a potential problem on bean name generation., dubbo version: 2.7.1, current host: 192.168.1.103
+2023-07-20 18:30:44.702  WARN 3684 --- [           main] b.f.a.ServiceAnnotationBeanPostProcessor :  [DUBBO] No Spring Bean annotating Dubbo's @Service was found under package[cn.itedus.lottery.rpc], dubbo version: 2.7.1, current host: 192.168.1.103
+2023-07-20 18:30:44.706  INFO 3684 --- [           main] o.s.c.a.ConfigurationClassPostProcessor  : Cannot enhance @Configuration bean definition 'org.apache.dubbo.spring.boot.autoconfigure.DubboRelaxedBinding2AutoConfiguration' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+2023-07-20 18:30:44.706  INFO 3684 --- [           main] o.s.c.a.ConfigurationClassPostProcessor  : Cannot enhance @Configuration bean definition 'org.apache.dubbo.spring.boot.autoconfigure.DubboAutoConfiguration' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+2023-07-20 18:30:44.723  INFO 3684 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'relaxedDubboConfigBinder' of type [org.apache.dubbo.spring.boot.autoconfigure.BinderDubboConfigBinder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-07-20 18:30:44.734  INFO 3684 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'relaxedDubboConfigBinder' of type [org.apache.dubbo.spring.boot.autoconfigure.BinderDubboConfigBinder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-07-20 18:30:44.735  INFO 3684 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'relaxedDubboConfigBinder' of type [org.apache.dubbo.spring.boot.autoconfigure.BinderDubboConfigBinder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-07-20 18:30:44.891  INFO 3684 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-07-20 18:30:45.000  INFO 3684 --- [           main] .f.a.DubboConfigBindingBeanPostProcessor : The properties of bean [name : org.apache.dubbo.config.ApplicationConfig#0] have been binding by prefix of configuration properties : dubbo.application
+2023-07-20 18:30:45.003  INFO 3684 --- [           main] .f.a.DubboConfigBindingBeanPostProcessor : The properties of bean [name : org.apache.dubbo.config.RegistryConfig#0] have been binding by prefix of configuration properties : dubbo.registry
+2023-07-20 18:30:45.007  INFO 3684 --- [           main] .f.a.DubboConfigBindingBeanPostProcessor : The properties of bean [name : org.apache.dubbo.config.ProtocolConfig#0] have been binding by prefix of configuration properties : dubbo.protocol
+2023-07-20 18:30:45.092  WARN 3684 --- [           main] o.s.w.c.s.GenericWebApplicationContext   : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'providers:dubbo:cn.itedus.lottery.IActivityBooth': Instantiation of bean failed; nested exception is java.lang.NoClassDefFoundError: Could not initialize class org.apache.dubbo.config.spring.ServiceBean
+2023-07-20 18:30:45.092  INFO 3684 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2023-07-20 18:30:45.093  INFO 3684 --- [           main] f.a.ReferenceAnnotationBeanPostProcessor : class org.apache.dubbo.config.spring.beans.factory.annotation.ReferenceAnnotationBeanPostProcessor was destroying!
+2023-07-20 18:30:45.094  INFO 3684 --- [           main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-07-20 18:30:45.095 ERROR 3684 --- [           main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'providers:dubbo:cn.itedus.lottery.IActivityBooth': Instantiation of bean failed; nested exception is java.lang.NoClassDefFoundError: Could not initialize class org.apache.dubbo.config.spring.ServiceBean
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1318) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1213) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:556) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:897) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879) ~[spring-context-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551) ~[spring-context-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758) ~[spring-boot-2.3.5.RELEASE.jar:2.3.5.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750) ~[spring-boot-2.3.5.RELEASE.jar:2.3.5.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:405) ~[spring-boot-2.3.5.RELEASE.jar:2.3.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) ~[spring-boot-2.3.5.RELEASE.jar:2.3.5.RELEASE]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:120) ~[spring-boot-test-2.3.5.RELEASE.jar:2.3.5.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124) ~[spring-test-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:123) ~[spring-test-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190) ~[spring-test-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132) ~[spring-test-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:244) ~[spring-test-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227) ~[spring-test-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289) ~[spring-test-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) ~[junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291) ~[spring-test-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246) ~[spring-test-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) ~[spring-test-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) ~[junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) ~[spring-test-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) ~[spring-test-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) ~[junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190) ~[spring-test-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137) ~[junit-4.12.jar:4.12]
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115) ~[junit-4.12.jar:4.12]
+	at org.junit.vintage.engine.execution.RunnerExecutor.execute(RunnerExecutor.java:43) ~[junit-vintage-engine-5.6.3.jar:5.6.3]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[na:na]
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133) ~[na:na]
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1845) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[na:na]
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150) ~[na:na]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596) ~[na:na]
+	at org.junit.vintage.engine.VintageTestEngine.executeAllChildren(VintageTestEngine.java:82) ~[junit-vintage-engine-5.6.3.jar:5.6.3]
+	at org.junit.vintage.engine.VintageTestEngine.execute(VintageTestEngine.java:73) ~[junit-vintage-engine-5.6.3.jar:5.6.3]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:220) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$6(DefaultLauncher.java:188) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:202) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:181) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:128) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:150) ~[surefire-junit-platform-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:124) ~[surefire-junit-platform-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384) ~[surefire-booter-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345) ~[surefire-booter-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126) ~[surefire-booter-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418) ~[surefire-booter-2.22.2.jar:2.22.2]
+Caused by: java.lang.NoClassDefFoundError: Could not initialize class org.apache.dubbo.config.spring.ServiceBean
+	at java.base/jdk.internal.misc.Unsafe.ensureClassInitialized0(Native Method) ~[na:na]
+	at java.base/jdk.internal.misc.Unsafe.ensureClassInitialized(Unsafe.java:1160) ~[na:na]
+	at java.base/jdk.internal.reflect.MethodHandleAccessorFactory.ensureClassInitialized(MethodHandleAccessorFactory.java:300) ~[na:na]
+	at java.base/jdk.internal.reflect.MethodHandleAccessorFactory.newConstructorAccessor(MethodHandleAccessorFactory.java:103) ~[na:na]
+	at java.base/jdk.internal.reflect.ReflectionFactory.newConstructorAccessor(ReflectionFactory.java:236) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.acquireConstructorAccessor(Constructor.java:546) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:496) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483) ~[na:na]
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:204) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:87) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1310) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	... 62 common frames omitted
+Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.ExceptionInInitializerError [in thread "main"]
+	... 73 common frames omitted
+
+2023-07-20 18:30:45.096 ERROR 3684 --- [           main] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@27adc16e] to prepare test instance [cn.itedus.lottery.test.ApiTest@6bce4140]
+
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:132) ~[spring-test-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:123) ~[spring-test-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190) ~[spring-test-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132) ~[spring-test-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:244) ~[spring-test-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227) ~[spring-test-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289) ~[spring-test-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) ~[junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291) ~[spring-test-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246) ~[spring-test-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) ~[spring-test-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) ~[junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) ~[spring-test-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) ~[spring-test-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) ~[junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190) ~[spring-test-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137) ~[junit-4.12.jar:4.12]
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115) ~[junit-4.12.jar:4.12]
+	at org.junit.vintage.engine.execution.RunnerExecutor.execute(RunnerExecutor.java:43) ~[junit-vintage-engine-5.6.3.jar:5.6.3]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[na:na]
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133) ~[na:na]
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1845) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[na:na]
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150) ~[na:na]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596) ~[na:na]
+	at org.junit.vintage.engine.VintageTestEngine.executeAllChildren(VintageTestEngine.java:82) ~[junit-vintage-engine-5.6.3.jar:5.6.3]
+	at org.junit.vintage.engine.VintageTestEngine.execute(VintageTestEngine.java:73) ~[junit-vintage-engine-5.6.3.jar:5.6.3]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:220) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$6(DefaultLauncher.java:188) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:202) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:181) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:128) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:150) ~[surefire-junit-platform-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:124) ~[surefire-junit-platform-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384) ~[surefire-booter-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345) ~[surefire-booter-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126) ~[surefire-booter-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418) ~[surefire-booter-2.22.2.jar:2.22.2]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'providers:dubbo:cn.itedus.lottery.IActivityBooth': Instantiation of bean failed; nested exception is java.lang.NoClassDefFoundError: Could not initialize class org.apache.dubbo.config.spring.ServiceBean
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1318) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1213) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:556) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:897) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879) ~[spring-context-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551) ~[spring-context-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758) ~[spring-boot-2.3.5.RELEASE.jar:2.3.5.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750) ~[spring-boot-2.3.5.RELEASE.jar:2.3.5.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:405) ~[spring-boot-2.3.5.RELEASE.jar:2.3.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) ~[spring-boot-2.3.5.RELEASE.jar:2.3.5.RELEASE]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:120) ~[spring-boot-test-2.3.5.RELEASE.jar:2.3.5.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124) ~[spring-test-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	... 45 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: Could not initialize class org.apache.dubbo.config.spring.ServiceBean
+	at java.base/jdk.internal.misc.Unsafe.ensureClassInitialized0(Native Method) ~[na:na]
+	at java.base/jdk.internal.misc.Unsafe.ensureClassInitialized(Unsafe.java:1160) ~[na:na]
+	at java.base/jdk.internal.reflect.MethodHandleAccessorFactory.ensureClassInitialized(MethodHandleAccessorFactory.java:300) ~[na:na]
+	at java.base/jdk.internal.reflect.MethodHandleAccessorFactory.newConstructorAccessor(MethodHandleAccessorFactory.java:103) ~[na:na]
+	at java.base/jdk.internal.reflect.ReflectionFactory.newConstructorAccessor(ReflectionFactory.java:236) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.acquireConstructorAccessor(Constructor.java:546) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:496) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483) ~[na:na]
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:204) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:87) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1310) ~[spring-beans-5.2.10.RELEASE.jar:5.2.10.RELEASE]
+	... 62 common frames omitted
+Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.ExceptionInInitializerError [in thread "main"]
+	... 73 common frames omitted
+
+]]></system-out>
+  </testcase>
+</testsuite>
